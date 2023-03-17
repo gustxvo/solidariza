@@ -14,12 +14,12 @@
         android:label="@string/app_name"
         android:enableOnBackInvokedCallback="true"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Solidariza"
+        android:theme="@style/Theme.Solidariza.SplashScreen"
         tools:targetApi="33">
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Solidariza">
+            android:theme="@style/Theme.Solidariza.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
