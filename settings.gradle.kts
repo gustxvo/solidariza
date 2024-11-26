@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Solidariza"
-include ':app'
+include(":app")

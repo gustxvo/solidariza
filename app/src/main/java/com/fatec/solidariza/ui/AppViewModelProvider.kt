@@ -16,7 +16,6 @@
 
 package com.fatec.solidariza.ui
 
-import android.app.Application
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory
 import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
@@ -55,10 +54,6 @@ object AppViewModelProvider {
                 this.createSavedStateHandle(),
                 solidarizaApplication().container.solidarizaRepository
             )
-        }
-
-        initializer {
-            HomeViewModel(solidarizaApplication().container.solidarizaRepository)
         }
     }
 }
