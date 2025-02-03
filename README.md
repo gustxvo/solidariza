@@ -25,6 +25,15 @@ O Solidariza é um aplicativo para a organização e gerenciamento de fornecedor
 
 ---
 
+## ⚙️ Tecnologias e Ferramentas
+
+- Jetpack Compose
+- Version Catalog
+- Room
+- Retrofit
+
+---
+
 ## 🫴Autores
 
 - [Gustavo Almeida Carvalho](https://github.com/gustxvo)
