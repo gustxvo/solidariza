@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.fatec.solidariza"
+    namespace = "br.com.gustavoalmeidacarvalho.solidariza"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.fatec.solidariza"
+        applicationId = "br.com.gustavoalmeidacarvalho.solidariza"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
