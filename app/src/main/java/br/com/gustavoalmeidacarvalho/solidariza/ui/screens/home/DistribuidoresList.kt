@@ -16,8 +16,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.Divider
-import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -41,7 +40,7 @@ fun DistribuidorList(
 ) {
     LazyColumn(modifier = modifier) {
         item {
-            Divider(modifier = Modifier.fillMaxWidth())
+            HorizontalDivider(modifier = Modifier.fillMaxWidth())
             Text(
                 "Distribuidores",
                 style = MaterialTheme.typography.displaySmall.copy(fontSize = 28.sp),
@@ -69,7 +68,6 @@ fun DistribuidorList(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun DistribuidorItem(
     distribuidor: Distribuidor,

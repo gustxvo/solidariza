@@ -17,8 +17,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AccountCircle
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.filled.Edit
-import androidx.compose.material3.Divider
 import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -79,7 +79,7 @@ fun DistribuidorScreen(
         ) {
             item {
                 Column {
-                    Divider(modifier = Modifier.fillMaxWidth())
+                    HorizontalDivider(modifier = Modifier.fillMaxWidth())
                     DistribuidorHeader(distribuidor = distribuidor)
                 }
             }
@@ -92,7 +92,7 @@ fun DistribuidorScreen(
             }
 
             items(distribuidor.registros.size) { index ->
-                Divider()
+                HorizontalDivider()
                 RegistroItem(registro = distribuidor.registros[index], item = index + 1)
             }
             if (distribuidor.registros.isEmpty()) {
