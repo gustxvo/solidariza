@@ -94,22 +94,6 @@ fun SolidarizaTheme(
         else -> LightColors
     }
 
-    val view = LocalView.current
-
-    if (!view.isInEditMode) {
-        /* getting the current window by tapping into the Activity */
-        val currentWindow = (view.context as? Activity)?.window
-            ?: throw Exception("Not in an activity - unable to get Window reference")
-
-        SideEffect {
-            /* the default code did the same cast here - might as well use our new variable! */
-            currentWindow.statusBarColor = colorScheme.primary.toArgb()
-            /* accessing the insetsController to change the appearance of the status bar, with 100% less deprecation warnings */
-            WindowCompat.getInsetsController(currentWindow, view).isAppearanceLightStatusBars =
-                darkTheme
-        }
-    }
-
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
